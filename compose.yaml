@@ -1,0 +1,40 @@
+services:
+  redis-instance-1:
+    image: "redis:latest"
+
+  redis-instance-2:
+    image: "redis:latest"
+
+  redis-instance-3:
+    image: "redis:latest"
+
+  redis-instance-4:
+    image: "redis:latest"
+
+  redis-instance-5:
+    image: "redis:latest"
+
+  redis-instance-6:
+    image: "redis:latest"
+
+  redis-instance-7:
+    image: "redis:latest"
+
+  redis-instance-8:
+    image: "redis:latest"
+
+  server:
+    build: .
+    ports:
+      - "50051:50051"
+    volumes:
+      - ./:/app
+    command: ["python3", "/app/server/main.py"]
+
+  api:
+    depends_on:
+      - server
+    build: .
+    volumes:
+      - ./:/app
+    command: ["python3", "/app/api/main.py"]
