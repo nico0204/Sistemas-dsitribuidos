@@ -1,0 +1,16 @@
+{
+    "platform-version": "2.3",
+    "product": {
+      "freshdesk": {
+        "location": {
+          "ticket_background": {
+            "url": "app.js"
+          }
+        }
+      }
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+  
