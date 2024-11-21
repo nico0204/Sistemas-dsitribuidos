@@ -1,0 +1,17 @@
+{
+    "name": "mi_aplicacion_freshdesk",
+    "version": "1.0.0",
+    "description": "Una aplicación para Freshdesk",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "engines": {
+      "node": "18.16.0",
+      "fdk" : "9.1.0"
+    },
+    "dependencies": {
+      "node-fetch": "3.0.0"
+    }
+  }
+  
